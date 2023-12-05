@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+protocol SignupViewDelegateProtocol: AnyObject {
+    func successfulSignup()
+    func errorHandler(error: SignupError)
+}

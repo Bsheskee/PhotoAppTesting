@@ -57,7 +57,7 @@ class SignupFormModelValidatorTests: XCTestCase {
     }
     
     func testSignupFormModelValidator_WhenLastNameTooLong_ShouldReturnFalse() {
-        let isLastNameValid = sut.isLastNameValid(lastName: "Białobrzewski")
+        let isLastNameValid = sut.isLastNameValid(lastName: "BiałobrzewskiBiało")
         
         XCTAssertFalse(isLastNameValid, "The isLastNameValid should have returned FALSE for a last name longer than 12 characters \(SignupConstants.lastNameMaxLength)")
     }
